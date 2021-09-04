@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{>head title="C*" desc="A programming language providing comprehensive guarantees of arbitrary mutability of state."}}
+{{>_style_bootstrap}}
+{{>_style_fontawesome}}
+{{>_style_index}}
+</head>
+<body>
+{{! header, manually inserted to remove self-referencing links}}
+<div class="_title">
+<div class="container">
+<div class="row">
+<div class="d-sm-block" style="width:100%;">
+<div class="text-center">
+<h1 id="_title">{{>cstar}}</h1>
+<h2 id="_subtitle">A programming language providing comprehensive guarantees of arbitrary mutability of state.</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="_topbar"></div></div>
+{{! end header }}
+<div class="container">
+<p class="_blurb">
+{{>cstar}} is a programming language that allows you to express something other languages do not: <strong><em>law &amp; order.</em></strong> This is the <em>pièce de résistance</em> for tackling bugs in the hardest sort of software engineering: systems programming.
+</p>
+<p class="_blurb">
+{{>cstar}} achieves this by bringing together <a href="https://www.cs.kent.ac.uk/people/staff/srk21/research/papers/kell17some-preprint.pdf" target="_blank">underappreciated aspects of C</a> and the philosophy of <a href="https://www.dataorienteddesign.com/dodbook/" target="_blank">Data-Oriented Design</a>. It solely focuses on dealing with the correctness of data, and does so using a “divide and conquer” strategy at the level of the compilation unit.
+</p>
+<hr />
+<p class="_blurb">
+Many aspects of programming taken for granted today needed to be cut out of the design of {{>cstar}} in order to make this feasible. Chief among those is the notion of <em>genericism</em>, as often featured in languages’ macro or metaprogramming facilities. {{>cstar}} likewise eschews other abstract programming paradigms as object-oriented programming (OOP) and functional programming (FP).
+</p>
+<p class="_blurb">
+The Data-Oriented Design book says that “data is all we have.” When data is truly all we have, with no abstract meaning attached, we can compartmentalise it and effectively deal with malformed data that comes in out of our control. Programs that misbehave due to malformed data are much harder to debug than programs misbehaving due to typos or other incidental slip-ups. After all, a programmer most likely knew what they meant anyway, but the same cannot be said of the input their program got from elsewhere.
+</p>
+<hr />
+<p class="_blurb">
+This toolset has broad implications for the development of systems software. It makes fuzzing irrelevant as it provides an exact solution to the problem fuzzing estimates and guesses its way through. It is also proof-in-waiting that abstraction is the enemy of sound software engineering, inasmuch as it will be used to build <a href="https://nicholatian.com/ethos" target="_blank">more sustainable systems</a> that outlast the rest. This includes the dismantling of the notion of <a href="https://nicholatian.com/safety">memory safety</a> proselytised by users of the Rust language.
+</p>
+<p class="_blurb">
+{{>cstar}} has a bright future with regard to weird computing architectures. It excels even more than C in communicating systems on bare metal, as it provides explicit vocabulary for controlling the ABI of a program. Since conventional computing hardware has reached an impasse, it will be the language of choice in a future where strange ISAs have come to dominate special-purpose computing for the dollar.
+</p>
+<hr />
+<p class="text-center">
+For now, {{>cstar}} is a work-in-progress. A proof-of-concept compiler was put into development called <em>Sirius C<span class="_star">*</span></em>, but it has gone inactive as <a href="https://nicholatian.com/" target="_blank">the author</a> has started to pursue other interests that will double back to it later on.
+</p>
+<p class="text-center">
+For now, the best place to read about {{>cstar}} is <a href="https://wiki.nicholatian.com/C*" target="_blank">its wiki page</a>. It is a living document that gets occasional updates.
+</p>
+</div>
+{{>footer}}
+{{>_code_jquery}}
+{{>_code_popper}}
+{{>_code_bootstrap}}
+{{>_code_tooltips}}
+</body>
+</html>

@@ -1,0 +1,11 @@
+[ {
+		"ident": "index",
+		"path": "/",
+		"strict": true,
+		"dep": {
+			"code": ["bootstrap", "jquery", "popper", "tooltips"],
+			"style": ["bootstrap", "fontawesome", "index"],
+			"partial": ["cstar", "footer", "head", "header"]
+		}
+	}
+]

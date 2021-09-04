@@ -1,0 +1,29 @@
+{
+	"name": "cstar-lang.org",
+	"version": "0.0.0",
+	"description": "C* language",
+	"main": "index.js",
+	"scripts": {
+		"clean": "rm -rf build",
+		"build": "ts-node util/makesite.ts src build",
+		"rebuild": "rm -rf build && ts-node util/makesite.ts src build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aquefir/cstar-lang.org.git"
+	},
+	"author": "Alexander Nicholi",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://github.com/aquefir/cstar-lang.org/issues"
+	},
+	"homepage": "https://github.com/aquefir/cstar-lang.org#readme",
+	"dependencies": {
+		"@types/node": "^14.11.1",
+		"handlebars": "^4.7.6",
+		"mkdirp": "^1.0.4",
+		"node-sass": "^4.14.1",
+		"ts-node": "^9.0.0",
+		"typescript": "^4.0.3"
+	}
+}
